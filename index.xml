@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>John Ruiz</title>
+    <link>https://www.johnruiz.com/</link>
+    <description>Recent content on John Ruiz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2022, John Ruiz; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 07 Nov 2022 22:40:53 -0500</lastBuildDate>
+    
+	<atom:link href="https://www.johnruiz.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Home Lab</title>
+      <link>https://www.johnruiz.com/posts/home-lab/</link>
+      <pubDate>Mon, 07 Nov 2022 22:40:53 -0500</pubDate>
+      
+      <guid>https://www.johnruiz.com/posts/home-lab/</guid>
+      <description>Like most software and sysadmin nerds, I have a home lab. It&amp;rsquo;s a hodgepodge mix of old desktops, salvaged servers, and purchased equipment. I thought it might be interesting to share what I&amp;rsquo;ve done because it will also remind me how and what I&amp;rsquo;ve done. Here are the things that are worth mentioning:
+ Running my own router [Slightly] more grown-up networking The charcuterie computing board Using Ansible (poorly) to install kubernetes Non-kubernetes dial-tone services: mysql and ldap Basic setup of a newly-installed kubernetes cluster  Kubernetes: installing calico and metallb Kubernetes: installing cert-manager for Ingress with Let&amp;rsquo;s Encrypt Kubernetes: observability with telegraf, influx, and grafana Kubernetes: bare-metal volumes with TopoLVM    As I write an entry, I&amp;rsquo;ll turn the list above into links and the entries will link back to this post, which will be a table of contents post.</description>
+    </item>
+    
+    <item>
+      <title>First Post: The New Website</title>
+      <link>https://www.johnruiz.com/posts/first-post/</link>
+      <pubDate>Sun, 27 Jan 2019 17:53:22 -0500</pubDate>
+      
+      <guid>https://www.johnruiz.com/posts/first-post/</guid>
+      <description>My website used to be static html that I created with a little bit of bootstrap help. I love bootstrap - not least because its creator (mdo) is a fellow Hubber - but the truth is that I don&amp;rsquo;t need everything that it does. The truth is that I&amp;rsquo;m better with markdown than I am with HTML and CSS these days. So, why not make a static website using markdown? Enter Hugo!</description>
+    </item>
+    
+  </channel>
+</rss>

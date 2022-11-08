@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="https://www.johnruiz.com/">
+<meta name="author" content="John Ruiz">
+
+<meta name="generator" content="Hugo 0.68.3" />
+<title>First Post: The New Website</title>
+<link rel="shortcut icon" href="https://www.johnruiz.com/images/favicon.ico" type="">
+<link rel="stylesheet" href="https://www.johnruiz.com/css/style.css">
+<link rel="stylesheet" href="https://www.johnruiz.com/css/highlight.css">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+
+<link href="https://www.johnruiz.com/index.xml" rel="alternate" type="application/rss+xml" title="John Ruiz" />
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@https://twitter.com/jar349">
+  <meta name="twitter:creator" content="@https://twitter.com/jar349">
+
+
+<meta property="og:title" content="First Post: The New Website">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.johnruiz.com/">
+
+
+  <meta property="og:image" content="https://www.johnruiz.com//images/onepress-logo.jpg">
+
+
+
+
+<link rel="canonical" href="https://www.johnruiz.com/posts/first-post/">
+
+    </head>
+<body>
+	  <header class="header">
+			<img src="https://www.johnruiz.com/images/onepress-logo.png" alt="">
+
+		</header>
+    <nav class="main-nav">
+        <ul>
+    <li class="active"><a href='https://www.johnruiz.com/'>Articles</a></li>
+    <li><a href='https://www.johnruiz.com/about'>About</a></li>
+    
+</ul>
+
+    </nav>
+    
+    
+    
+    <div id="site-wrapper">
+        <main>
+            
+  <article class="single">
+    <h1>First Post: The New Website</h1>
+    <section class="extras">
+        <span class="tags">
+          <small class="time">January 27, 2019</small>
+          
+        </span>
+    </section>
+    <section class="description">
+      
+    </section>
+    
+    <section id="content" class="body">
+        <p>My website used to be static html that I created with a little bit of bootstrap help.  I love bootstrap - not least
+because its creator (<a href="https://github.com/mdo">mdo</a>) is a fellow Hubber - but the truth is that I don&rsquo;t need everything
+that it does.  The truth is that I&rsquo;m better with markdown than I am with HTML and CSS these days.  So, why not make a
+static website using markdown?  Enter <a href="https://gohugo.io/">Hugo</a>!</p>
+<p>Since I&rsquo;m a hubber too, I felt obliged to make use of <a href="https://pages.github.com/">github pages</a> so I googled up <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages">this
+documentation</a> for help with
+getting hugo and githubpages to work together.  In addition, I wrote this little script to start my local development server so that I can get things right before I
+publish it to the repo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/bin/env bash
+</span><span style="color:#75715e"></span>set -e
+
+hugo server -D --bind <span style="color:#e6db74">&#34;0.0.0.0&#34;</span> -b <span style="color:#e6db74">&#34;http://compute.ruiz.house:1313/&#34;</span> --disableFastRender
+</code></pre></div><p><code>compute.ruiz.house</code> is my ubuntu compute server here at home.  The <code>:1313</code> is the hugo server port.  Since I&rsquo;m SSH&rsquo;d
+into <code>compute</code> from my Windows machine, I need to bind on <code>0.0.0.0</code> so that I can hit <code>compute</code> from my browser here.</p>
+<p>So my workflow is this:</p>
+<ol>
+<li>run ./dev</li>
+<li>make my changes and preview them</li>
+<li>run ./deploy.sh</li>
+</ol>
+<p>I love that my site is static.  I love that the content is driven by markdown.  I love LOVE that I&rsquo;m not writing any
+CSS and the site looks acceptable.  The only dynamic content is the <a href="https://disqus.com/">disqus</a>, but it&rsquo;s all
+handled by the excellent <a href="https://github.com/ijsucceed/onepress">onepress</a> theme.</p>
+<p>The only remaining question is whether the comments section will be useful or a <a href="https://www.youtube.com/watch?v=Xcb4_QwP6fE">wretched hive of scum and villainy</a>.</p>
+
+    </section> 
+    
+    
+     
+  </article>
+  
+<div class="share-card">
+    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fwww.johnruiz.com%2fposts%2ffirst-post%2f - First%20Post%3a%20The%20New%20Website by @https%3a%2f%2ftwitter.com%2fjar349"><i class="fa fa-twitter"></i> Tweet</a>
+
+    <a class="facebook" href="#" onclick="
+        window.open(
+          'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+          'facebook-share-dialog',
+          'width=626,height=436');
+        return false;"><i class="fa fa-facebook"></i> Share
+    </a>
+</div>
+
+
+ 
+  
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'johnruiz';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        </main>
+        
+        <aside class="desktop-only">
+            
+	<div class="widgets">
+
+  <section itemscope itemtype="https://schema.org/Person" class="widget socials">
+    <h2 class="widget-title">Socials</h2>
+    <ul>
+        
+            <li><a href="https://facebook.com/jar349"><i class="fa fa-facebook"></i></a></li>
+        
+        
+        <li><a href="https://twitter.com/jar349"><i class="fa fa-twitter"></i></a></li>
+        
+        
+        <li><a href="https://www.linkedin.com/in/jar349"><i class="fa fa-linkedin"></i></a></li>
+        
+        
+        <li><a href="https://github.com/jar349"><i class="fa fa-github"></i></a></li>
+        
+    </ul>
+  </section>
+
+  <section class="widget widget-one">
+    
+    <h2 class="widget-title">Coming Soon</h2>
+    I don't know what I'm going to put here yet but I'm sure it'll be awesome!
+  </section>
+
+
+ 
+
+</div>
+
+
+            <footer id="footer">
+    <p class="small">
+      Copyright © 2022, John Ruiz; all rights reserved.
+    </p>
+</footer>
+        </aside>
+    </div>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://www.johnruiz.com/js/main.js"></script>
+<script src="https://www.johnruiz.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>
