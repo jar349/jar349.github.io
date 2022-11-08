@@ -1,0 +1,35 @@
+baseURL = "https://www.johnruiz.com/"
+languageCode = "en-us"
+title = "John Ruiz"
+theme = "onepress"
+copyright = "Copyright © 2022, John Ruiz; all rights reserved."
+canonifyURLS = true
+paginate = 12
+disqusShortname = "johnruiz"
+
+[params]
+    author = "John Ruiz"
+        bio = "Husband, Father, Software Nerd"
+    logo = "/images/onepress-logo.png"
+    avatar = "/images/onepress-author.png"
+    opengraphImage = "/images/onepress-logo.jpg"
+    enableRSS = true
+
+    customCSS = false
+        readMore = "Read Up"
+
+    github = "https://github.com/jar349"
+    twitter = "https://twitter.com/jar349"
+    facebook = "https://facebook.com/jar349"
+    linkedin = "https://www.linkedin.com/in/jar349"
+
+    widgets = true
+
+    authorCard = false
+    shareButton = true
+
+    highlightJS = true
+
+[taxonomies]
+    tag = "tags"
+
