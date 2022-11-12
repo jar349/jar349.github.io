@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+
+# initialize any submodules
+git submodule update --init --recursive
